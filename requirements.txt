@@ -1,0 +1,6 @@
+# Tic Tac Toe Game Requirements
+# Tkinter is included with Python standard library
+# No additional packages required
+
+# Python version requirement
+# Python >= 3.6 
