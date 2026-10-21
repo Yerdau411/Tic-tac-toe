@@ -2,7 +2,7 @@
 
 A modern, user-friendly Tic Tac Toe game built with Python and Tkinter.
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/AidenDaysGrace/Tic-tac-toe.git)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github)](https://github.com/Yerdau411/Tic-tac-toe.git)
 
 ## Features
 
@@ -66,7 +66,7 @@ If you get an error about Tkinter not being found:
 
 ## GitHub Repository
 
-This project is hosted on GitHub at: [https://github.com/AidenDaysGrace/Tic-tac-toe.git](https://github.com/AidenDaysGrace/Tic-tac-toe.git)
+This project is hosted on GitHub at: [https://github.com/Yerdau411/Tic-tac-toe.git](https://github.com/Yerdau411/Tic-tac-toe.git)
 
 ### Contributing
 
