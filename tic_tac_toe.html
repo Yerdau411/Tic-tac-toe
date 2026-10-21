@@ -119,6 +119,7 @@
 
         .score-x { color: #e53e3e; }
         .score-o { color: #d69e2e; }
+        .score-tie { color: #4a5568; }
 
         .reset-btn {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -172,6 +173,10 @@
                 <div class="score-label">Player X</div>
                 <div class="score-value score-x" id="score-x">0</div>
             </div>
+                        <div class="score-item">
+                <div class="score-label">Ties</div>
+                <div class="score-value score-tie" id="score-tie">0</div>
+            </div>
             <div class="score-item">
                 <div class="score-label">Player O</div>
                 <div class="score-value score-o" id="score-o">0</div>
@@ -187,6 +192,7 @@
         let gameActive = true;
         let scoreX = 0;
         let scoreO = 0;
+        let scoreTie = 0;
 
         const winningCombinations = [
             [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
@@ -210,7 +216,9 @@
                 document.getElementById('status').classList.add('game-over');
             } else if (board.every(cell => cell !== '')) {
                 gameActive = false;
-                document.getElementById('status').textContent = "It's a Tie! 🤝";
+                                scoreTie++;
+                document.getElementById('score-tie').textContent = scoreTie;
+                document.getElementById('status').textContent = "It's a Tie!";
                 document.getElementById('status').classList.add('tie');
             } else {
                 currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
